@@ -6,5 +6,3 @@ require("prog.config.nvim-cmp")
 require("prog.config.project")
 require("prog.config.treesitter")
 
--- load languages config
-require("prog.config.lang.init")
