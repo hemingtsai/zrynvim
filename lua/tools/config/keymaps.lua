@@ -15,7 +15,14 @@ return {
     { "<leader>tn", '<cmd>ToggleTerm<CR>', desc = "Open Normal Terminal" },
 
     { "<leader>s", group = "Search" },
-    { "<leader>sa", '<cmd>SearchBoxMatchAll<CR>', desc = "Search but match all" , icon='󰾹'},
+    { "<leader>sa", '<cmd>SearchBoxMatchAll<CR>', desc = "Search and match all" , icon='󰾹'},
     { "<leader>sr", '<cmd>SearchBoxReplace<CR>', desc = "Search and replace", icon = "" },
-    { "<leader>ss", '<cmd>SearchBoxSimple<CR>', desc = "Only Search" }
+    { "<leader>ss", '<cmd>SearchBoxSimple<CR>', desc = "Only Search" },
+
+    { "<leader>g", group = "Git"},
+    { "<leader>go", '<cmd>Neogit<CR>', desc = "Open Neogit" },
+    { "<leader>gc", '<cmd>Neogit commit', desc = "Git commit" },
+    { "<leader>gp", '<cmd>Neogit pull<CR>', desc = "Git pull" },
+    { "<leader>gP", '<cmd>Neogit push<CR>', desc = "Git push" },
+    { "<leader>gd", '<cmd>Neogit diff<CR>', desc = "Git diff" },
 }

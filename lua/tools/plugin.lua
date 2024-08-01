@@ -1,3 +1,7 @@
+-- This Source Code Form is subject to the terms of the Mozilla Public
+-- License, v. 2.0. If a copy of the MPL was not distributed with this
+-- file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 return {
     {
         "kyazdani42/nvim-tree.lua",
@@ -9,9 +13,9 @@ return {
         "nvim-telescope/telescope.nvim",
         dependencies = {
             "nvim-lua/plenary.nvim",
+            "gbrlsnchs/telescope-lsp-handlers.nvim"
         },
     },
-
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
@@ -30,23 +34,33 @@ return {
         config = true,
     },
     {
-        "voldikss/vim-floaterm",
+        "numToStr/FTerm.nvim",
     },
     {
-        "smoka7/multicursors.nvim",
-        event = "VeryLazy",
-        dependencies = {
-            "nvimtools/hydra.nvim",
-        },
-        opts = {},
-        cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
-        keys = {
-            {
-                mode = { "v", "n" },
-                "<Leader>m",
-                "<cmd>MCstart<cr>",
-                desc = "Create a selection for selected text or word under the cursor",
-            },
-        },
+        'viocost/viedit',
     },
+    {
+        'VonHeikemen/searchbox.nvim',
+        dependencies = {
+            'MunifTanjim/nui.nvim'
+        }
+    },
+    {
+        'VonHeikemen/fine-cmdline.nvim',
+        dependencies = {
+            'MunifTanjim/nui.nvim'
+        }
+    },
+
+    {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim", -- required
+            "sindrets/diffview.nvim", -- optional - Diff integration
+
+            -- Only one of these is needed, not both.
+            "nvim-telescope/telescope.nvim", -- optional
+            "ibhagwan/fzf-lua",      -- optional
+        },
+    }
 }
