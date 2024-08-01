@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/hemingtsai/zrynvim">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center">Zry Nvim</h3>
