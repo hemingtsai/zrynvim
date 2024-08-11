@@ -55,12 +55,19 @@ return {
     {
         "NeogitOrg/neogit",
         dependencies = {
-            "nvim-lua/plenary.nvim", -- required
+            "nvim-lua/plenary.nvim",  -- required
             "sindrets/diffview.nvim", -- optional - Diff integration
 
             -- Only one of these is needed, not both.
             "nvim-telescope/telescope.nvim", -- optional
-            "ibhagwan/fzf-lua",      -- optional
+            "ibhagwan/fzf-lua",              -- optional
         },
-    }
+    },
+    {
+        'adelarsq/image_preview.nvim',
+        event = 'VeryLazy',
+        config = function()
+            require("image_preview").setup()
+        end
+    },
 }
