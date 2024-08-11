@@ -21,7 +21,7 @@ return {
 
     { "<leader>g", group = "Git"},
     { "<leader>go", '<cmd>Neogit<CR>', desc = "Open Neogit" },
-    { "<leader>gc", '<cmd>Neogit commit', desc = "Git commit" },
+    { "<leader>gc", '<cmd>Neogit commit<CR>', desc = "Git commit" },
     { "<leader>gp", '<cmd>Neogit pull<CR>', desc = "Git pull" },
     { "<leader>gP", '<cmd>Neogit push<CR>', desc = "Git push" },
     { "<leader>gd", '<cmd>Neogit diff<CR>', desc = "Git diff" },
